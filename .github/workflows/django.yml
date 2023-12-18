@@ -32,7 +32,7 @@ jobs:
       uses: mr-smithers-excellent/docker-build-push@v6
       with:
           image: beleabhijit21/karn
-          tags: latest
+          tags: Aatach
           registry: docker.io
           dockerfile: Dockerfile
           username: ${{ secrets.DOCKER_USERNAME }}
