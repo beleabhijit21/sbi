@@ -1,4 +1,4 @@
-name: Django CICD
+name: Django CI CD
 
 on:
   push:
@@ -30,7 +30,7 @@ jobs:
         python manage.py
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag beleabhijit21/mobile:latest
+      run: docker build . --file Dockerfile --tag beleabhijit21/yes:latest
     - name: Log in to Docker Hub
       run: |
         echo Logging in to Docker Hub
@@ -38,11 +38,11 @@ jobs:
     - name: Push Docker image to Docker Hub
       run: |
         echo Pushing Docker image to Docker Hub
-        docker push beleabhijit21/mobile:latest
+        docker push beleabhijit21/yes:latest
     #- name: Install dependencies
    #   run: npm install
   #  - name: Build Docker image
-   #   run: docker build -t beleabhijit21/new_one:latest .
+   #   run: docker build -t beleabhijit21/n:latest .
 
   #  - name: Push Docker image
    #   run: docker push beleabhijit21/new_one:latest
