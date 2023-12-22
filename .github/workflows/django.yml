@@ -30,7 +30,19 @@ jobs:
         python manage.py
 #    - uses: actions/checkout@v3
 #    - name: Build the Docker image
- #     run: docker build . --file Dockerfile --tag beleabhijit21/yes:latest
+#      run: docker build . --file Dockerfile --tag beleabhijit21/sss:latest
+#    - name: Docker Run Container
+#       run:docker run -d -p 8000:8000 sss
+#    - name: Wait for the application to start
+#      run: sleep 10
+#    - name: Run tests
+ #     run: |
+ #       response=$(curl -s http://localhost:8000)
+ #       if [[ "$response" == "Hello, CI/CD World!" ]]; then
+#          echo "Tests passed!"
+#        else
+#          echo "Tests failed!"
+#          exit 1
 #    - name: Log in to Docker Hub
 #      run: |
  #       echo Logging in to Docker Hub
